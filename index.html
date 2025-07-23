@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Titles</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/f2346d3ea1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <figure>
+      <img
+        class="movie__img"
+        src="./assets/movie-background-collage.jpg"
+        alt=""
+      />
+    </figure>
+    <div class="background">
+      <nav class="nav__bar">
+        <div class="nav__content--wrapper">
+          <div class="movie__title--img">
+            <img
+              class="small__img"
+              src="https://cdn.pixabay.com/photo/2015/12/05/21/45/filmklappe-1078813_1280.png"
+              alt=""
+            />
+            <h1 class="nav__bar--title">
+              <span class="white">Movie Hub</span>
+            </h1>
+          </div>
+          <div class="nav__header--links">
+            <a class="nav__link" href="">Home</a>
+            <a class="nav__link">Find your movie</a>
+            <a class="nav__link nav__link--btn">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <div class="browse__movie--wrapper">
+        <h2 class="browse__title">Browse our Movies</h2>
+        <div class="browse__btn--wrapper">
+          <form>
+            <input
+              id="searchInput" 
+              placeholder="Search">
+            </input>
+            <button class="input__btn" id="searchButton" type="button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+     </div>
+    <section>
+        <div class="container">
+        <div class= "movieResults">
+            
+        </div>
+        </div>
+    </section>
+  </body>
+  <script src="index.js" ></script>
+</html>
