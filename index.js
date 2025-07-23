@@ -31,7 +31,7 @@ async function movieLookup(search) {
      const spinner = document.getElementById("spinner");
       spinner.classList.remove("hidden");
       try {
-      const movieTitle = await fetch (`http://www.omdbapi.com/?apikey=9c546bc8&s=${search}`);
+      const movieTitle = await fetch (`https://www.omdbapi.com/?apikey=9c546bc8&s=${search}`);
       const movieData =  await movieTitle.json();
 
    if (movieData.Response === "True") {
@@ -57,7 +57,7 @@ ${movie.Year}<br> </div>`)
 }};
 
 async function main () {
-   const movieTitle = await fetch (`http://www.omdbapi.com/?apikey=9c546bc8&s=fast`);
+   const movieTitle = await fetch (`https://www.omdbapi.com/?apikey=9c546bc8&s=fast`);
    const movieData =  await movieTitle.json();
    const movies = movieData.Search;
     console.log(movies)
