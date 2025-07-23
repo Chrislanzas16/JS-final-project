@@ -224,4 +224,11 @@ form {
     }
  }
 
+ #filter {
+    position: relative;
+    padding: 6px 32px 6px 6px;
+    margin-left: 65%;
+   outline: none;
+   
+ }
 
