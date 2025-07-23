@@ -208,7 +208,9 @@ form {
 
 .fa-spinner {
     animation: rotate 600ms infinite linear;
-      font-size: 60px;
+    position: absolute;
+    margin-top: 300px;
+    font-size: 80px;
     color: azure;
 }
  
