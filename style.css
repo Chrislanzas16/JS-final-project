@@ -162,30 +162,64 @@ form {
 
 
 .movieResults {
-    padding-top: 20px;
-    width: 100%;
     position: relative;
-   opacity: 1;
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-around;
-   font-size: 16px;
-   font-weight: 500;
-   margin: 0 20px;
-   text-align:center;
-   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
+.search_result {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.search_result img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
 
 .container {
-    padding: 50px;
-    margin: 0 200px;
-    align-items: center;
-    justify-content: center;
-   
+    padding: 40px;
+    margin: 0 100px;
 }
 
+.search_result:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
+.hidden {
+    display: none !important; 
+}
+
+.fa-spinner .hidden {
+    display: block !important;
+}
+
+.fa-spinner {
+    animation: rotate 600ms infinite linear;
+      font-size: 60px;
+    color: azure;
+}
+ 
+
+ @keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+ }
 
 
